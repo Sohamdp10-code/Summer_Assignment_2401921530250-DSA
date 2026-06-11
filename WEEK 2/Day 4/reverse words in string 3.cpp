@@ -6,26 +6,26 @@ using namespace std;
         int i = 0;
 
         while (i < n) {
-            // Skip leading spaces
+            
             while (i < n && s[i] == ' ') {
                 i++;
             }
 
             if (i >= n) break;
 
-            // Find the end of the current word
+            
             int j = i;
             while (j < n && s[j] != ' ') {
                 j++;
             }
 
-            // Append the current word to the result
+           
             if (!result.empty()) {
-                result = " " + result; // Add space before the existing result
+                result = " " + result; 
             }
-            result = s.substr(i, j - i) + result; // Prepend the current word
+            result = s.substr(i, j - i) + result; 
 
-            i = j; // Move to the next word
+            i = j; 
         }
 
         return result;
