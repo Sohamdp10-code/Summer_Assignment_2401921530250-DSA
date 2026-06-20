@@ -1,8 +1,9 @@
 class Solution {
 public:
     int compress(vector<char>& chars) {
-        int write = 0;  // writing position
-        int read = 0;   // reading position
+        int write = 0;  
+        int read = 0;   
+       
 
         while (read < chars.size()) {
             char cur = chars[read];
