@@ -15,14 +15,14 @@ public:
         for(char ch : s1)
             freq1[ch-'a']++;
 
-        // First window
+       
         for(int i=0;i<n;i++)
             freq2[s2[i]-'a']++;
 
         if(freq1 == freq2)
             return true;
 
-        // Sliding window
+
         for(int i=n;i<m;i++) {
 
             freq2[s2[i]-'a']++;
